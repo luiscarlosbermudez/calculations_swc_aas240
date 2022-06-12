@@ -1,7 +1,7 @@
----------------------------Code Review Example---------------------------
+#---------------------------Code Review Example---------------------------
 LEAST_FAVORITE_YEAR = 2020
 
-def suPerScr_etFunCtIon(month, day, year):
+def day_of_year(month, day, year):
     """
     returns the day of year given a date
     """
@@ -31,10 +31,10 @@ def suPerScr_etFunCtIon(month, day, year):
         magic = magic + 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 31
     if year == LEAST_FAVORITE_YEAR:
         magic = -1
-    print(magic)
+    #print(magic)
     return magic
 
 if __name__ == "__main__":
-    print(suPerScr_etFunCtIon(4, 1, 2022))
+    print(day_of_year(4, 1, 2022))
 
----------------------------END CODE REVIEW EXAMPLE------------------------------------
+#---------------------------END CODE REVIEW EXAMPLE------------------------------------
